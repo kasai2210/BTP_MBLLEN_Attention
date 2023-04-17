@@ -34,14 +34,21 @@ python train.py
 
 By default, the code takes the data in the "../dataset/" folder and save weights in the "./models/" folder. Please read the code to see other parameter settings.
 
-
 ## Model
 
+- [x] 10_dark_base.h5  (This model has been trained by us using synthetic lowlight images provided in the dataset linked at the top. The 10 here denotes that the model has been trained on 10 epochs.)
 - [x] Syn_img_lowlight_withnoise.h5  (This model is trained using synthetic lowlight images based on Poisson noise model. It is using for enhancement and denoising simultaneously.)
 - [x] Syn_img_lowlight.h5  (This model is trained using synthetic lowlight images without additional noise. It is using only for enhancement.)
 - [x] LOL_img_lowlight.h5  (This model is fine-tuned using LOL Dataset.)
 
-## Related Follow-Up Work
+## Paper Citation - 
 
 Feifan Lv, Yu Li and Feng Lu. Attention Guided Low-light Image Enhancement with a Large Scale Low-light Simulation Dataset. IJCV, 2021. **[Paper](https://arxiv.org/abs/1908.00682) and [Project page](http://phi-ai.buaa.edu.cn/project/AgLLNet/index.htm)**
 
+## Dataset citation - 
+@inproceedings{Lv2018MBLLEN,
+  title={MBLLEN: Low-light Image/Video Enhancement Using CNNs},
+  author={Feifan Lv, Feng Lu, Jianhua Wu and Chongsoon Lim},
+  booktitle={British Machine Vision Conference},
+  year={2018}
+}
