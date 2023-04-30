@@ -19,7 +19,7 @@ import platform
 import keras
 import os
 import random
-import Network
+import Network_without_Attention as Network
 import utls
 import matplotlib.pyplot as plt
 
@@ -199,7 +199,7 @@ H = combined.fit(
 print('Done!')
 
 print(H.history["loss"])
-print(H.history[c])
+print(H.history["bright_mae"])
 print(H.history["bright_mse"])
 print(H.history["bright_psnr"])
 print(H.history["bright_SSIM"])
